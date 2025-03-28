@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cadastro de Consumo de Água</title>
+  </head>
+  <body>
+    <h2>Cadastro de Consumo de Água</h2>
+    <form action="{{ url_for('cadastro') }}" method="POST">
+      <label for="nome">Nome:</label>
+      <input type="text" id="nome" name="nome" required /><br /><br />
+
+      <label for="tempobanho">Tempo de Banho (min):</label>
+      <input
+        type="number"
+        id="tempobanho"
+        name="tempobanho"
+        step="0.1"
+        required
+      /><br /><br />
+
+      <label for="qtdebanho">Quantidade de Banhos/dia:</label>
+      <input
+        type="number"
+        id="qtdebanho"
+        name="qtdebanho"
+        required
+      /><br /><br />
+
+      <label for="tempo_torneira_maos">Tempo para lavar as mãos (min):</label>
+      <input
+        type="number"
+        id="tempo_torneira_maos"
+        name="tempo_torneira_maos"
+        step="0.1"
+        required
+      /><br /><br />
+
+      <label for="qtdeusotorneiramaos">Frequência de lavar as mãos/dia:</label>
+      <input
+        type="number"
+        id="qtdeusotorneiramaos"
+        name="qtdeusotorneiramaos"
+        required
+      /><br /><br />
+
+      <label for="tempo_torneira_escovardentes"
+        >Tempo para escovar os dentes (min):</label
+      >
+      <input
+        type="number"
+        id="tempo_torneira_escovardentes"
+        name="tempo_torneira_escovardentes"
+        step="0.1"
+        required
+      /><br /><br />
+
+      <label for="qtdeusotorneiradentes"
+        >Frequência de escovar os dentes/dia:</label
+      >
+      <input
+        type="number"
+        id="qtdeusotorneiradentes"
+        name="qtdeusotorneiradentes"
+        required
+      /><br /><br />
+
+      <label for="tempo_torneira_lavarlouça"
+        >Tempo para lavar louça (min):</label
+      >
+      <input
+        type="number"
+        id="tempo_torneira_lavarlouça"
+        name="tempo_torneira_lavarlouça"
+        step="0.1"
+        required
+      /><br /><br />
+
+      <label for="qtdeusotorneiralouça">Frequência de lavar louça:</label>
+      <input
+        type="number"
+        id="qtdeusotorneiralouça"
+        name="qtdeusotorneiralouça"
+        required
+      /><br /><br />
+
+      <label for="qtdedescarga">Número de descargas/dia:</label>
+      <input
+        type="number"
+        id="qtdedescarga"
+        name="qtdedescarga"
+        required
+      /><br /><br />
+
+      <label for="volume">Volume de água consumido (m³):</label>
+      <input
+        type="number"
+        id="volume"
+        name="volume"
+        step="0.1"
+        required
+      /><br /><br />
+
+      <label for="categoria"
+        >Categoria de consumo (1-Social, 2-Popular, 3-Normal):</label
+      >
+      <input
+        type="number"
+        id="categoria"
+        name="categoria"
+        required
+      /><br /><br />
+
+      <button type="submit">Calcular</button>
+    </form>
+  </body>
+</html>
